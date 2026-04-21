@@ -258,6 +258,13 @@
 #endif
 #endif
 
+// Global barometer driver override - force BME680 and disable DPS310
+#undef USE_BARO_DPS310
+#undef USE_BARO_SPI_DPS310
+#define USE_BARO
+#define USE_BARO_BME680
+#define USE_BARO_SPI_BME680
+
 // Add VARIO if BARO or GPS is defined. Remove when none defined.
 #if defined(USE_BARO) || defined(USE_GPS)
 #ifndef USE_VARIO
