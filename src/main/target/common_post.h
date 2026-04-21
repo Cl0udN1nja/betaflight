@@ -784,3 +784,4 @@ extern struct linker_symbol __config_end;
 #if !defined(ENABLE_CAN)
 #define ENABLE_CAN 0
 #endif
+
